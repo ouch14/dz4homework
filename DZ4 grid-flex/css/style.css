@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu";
+}
+h3 {
+  font-family: "oswald";
+  
+}
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+li {
+  color: #70798c;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+  background-color: #f5f1ed;
+  padding: 2%;
+  display: flex;
+  grid-column: span 2;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+    
+}
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "roboto";
+}
+.header ul li:hover {
+  margin: 0 10px;
+  color: #ff6600;
+}
+.header h3 {
+  margin: 10px;
+  color: #ff6600;
+}
+.left-block {
+  display: flex;
+  justify-content:center;
+  
+}
+.left-block ul {
+  display: flex;
+  flex-direction: column; 
+}
+.left-block ul li {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.left-block ul li:hover {
+  color: #ff6600;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  justify-content: center;
+  background-color: #252323;
+  color: #fff;
+  display: flex;
+}
+.footer span {
+  color: #ff6600;
+}
+.plan-button {
+  padding: 10px;
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  
+}
+
+.pricing-plan {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.plan-title {
+  font-size:32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  margin-bottom: 10px;
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+  }
+  .header ul {
+    display: flex;
+    justify-content: right;
+  }
+  .left-block ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 40px;
+}
+}
